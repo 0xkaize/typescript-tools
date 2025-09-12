@@ -7,3 +7,8 @@ type Readonly<T> = {
 type Modifiable<T> = {
   -readonly [P in keyof T]: T[P];
 };
+
+// changing interface to optional
+type Partial<T> = {
+  [P in keyof T]?: T[P];
+};
